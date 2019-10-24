@@ -1,8 +1,5 @@
 package com.phoenix.poplar.utils;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.HashMap;
 
 public class PoplarResult extends HashMap<String, Object> {
@@ -32,11 +29,11 @@ public class PoplarResult extends HashMap<String, Object> {
         return result;
     }
 
-    public PoplarResult ok(String code,String msg, Object data) {
+    public PoplarResult ok(String code, String msg, Object data) {
         PoplarResult result = new PoplarResult();
         result.put("code", code);
         result.put("msg", msg);
-        result.put("data",data);
+        result.put("data", data);
         return result;
     }
 
