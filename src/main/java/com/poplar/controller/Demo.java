@@ -1,8 +1,8 @@
-package com.phoenix.poplar.controller;
+package com.poplar.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.phoenix.poplar.entity.Poplar;
-import com.phoenix.poplar.utils.PoplarResult;
+import com.poplar.entity.Poplar;
+import com.poplar.utils.PoplarResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

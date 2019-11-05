@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.phoenix.poplar.dao.UserMapper">
-  <resultMap id="BaseResultMap" type="com.phoenix.poplar.entity.User">
+<mapper namespace="com.poplar.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.poplar.entity.User">
     <id column="ID" jdbcType="INTEGER" property="id" />
     <result column="NAME" jdbcType="VARCHAR" property="name" />
     <result column="AGE" jdbcType="INTEGER" property="age" />
@@ -19,13 +19,13 @@
     delete from t_user
     where ID = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.phoenix.poplar.entity.User">
+  <insert id="insert" parameterType="com.poplar.entity.User">
     insert into t_user (ID, NAME, AGE
       )
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.phoenix.poplar.entity.User">
+  <insert id="insertSelective" parameterType="com.poplar.entity.User">
     insert into t_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.phoenix.poplar.entity.User">
+  <update id="updateByPrimaryKeySelective" parameterType="com.poplar.entity.User">
     update t_user
     <set>
       <if test="name != null">
@@ -62,7 +62,7 @@
     </set>
     where ID = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.phoenix.poplar.entity.User">
+  <update id="updateByPrimaryKey" parameterType="com.poplar.entity.User">
     update t_user
     set NAME = #{name,jdbcType=VARCHAR},
       AGE = #{age,jdbcType=INTEGER}
