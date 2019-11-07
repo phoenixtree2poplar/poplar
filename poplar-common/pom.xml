@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.phoenix</groupId>
-    <artifactId>poplar-dao</artifactId>
+    <artifactId>poplar-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>poplar-dao</name>
-    <description>数据库操作子模块</description>
+    <name>poplar-common</name>
+    <description>common通用工具</description>
 
     <parent>
         <groupId>com.phoenix</groupId>
