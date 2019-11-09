@@ -1,4 +1,4 @@
-package com.phoenix.poplar.entity;
+package com.phoenix.dao.entity;
 
 import lombok.Getter;
 import lombok.Setter;
