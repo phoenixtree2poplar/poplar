@@ -15,6 +15,6 @@ public class Demo {
         poplar.setName("少年张三丰");
         poplar.setAge(25);
         PoplarResult poplarResult = new PoplarResult();
-        return new JSONObject(poplarResult.ok("200","success",poplar));
+        return new JSONObject(poplarResult.ok(200,"success"));
     }
 }
