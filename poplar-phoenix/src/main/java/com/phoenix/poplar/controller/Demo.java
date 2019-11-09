@@ -12,7 +12,7 @@ public class Demo {
     JSONObject poplar() {
         Poplar poplar = new Poplar();
         poplar.setId(00);
-        poplar.setName("sssssssddddddffffffffffffffffffffffdddddddfffffffffffffffffffffffffffffffffffffdddddddsssssf");
+        poplar.setName("少年张三丰");
         poplar.setAge(25);
         PoplarResult poplarResult = new PoplarResult();
         return new JSONObject(poplarResult.ok("200","success",poplar));

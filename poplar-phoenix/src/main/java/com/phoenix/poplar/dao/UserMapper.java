@@ -1,9 +1,9 @@
 package com.phoenix.poplar.dao;
 
 import com.phoenix.poplar.entity.User;
-import org.apache.ibatis.annotations.Mapper;
+//import org.apache.ibatis.annotations.Mapper;
 
-@Mapper
+//@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 

@@ -119,15 +119,14 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-spring.version}</version>
             </dependency>
-
             <!-- 热加载 -->
-            <!--            <dependency>-->
-            <!--                <groupId>org.springframework.boot</groupId>-->
-            <!--                <artifactId>spring-boot-devtools</artifactId>-->
-            <!--                <version>${springboot.version}</version>-->
-            <!--                <scope>runtime</scope>-->
-            <!--                <optional>true</optional>-->
-            <!--            </dependency>-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <version>${springboot.version}</version>
+                <scope>runtime</scope>
+                <optional>true</optional>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
