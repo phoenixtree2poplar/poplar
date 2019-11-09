@@ -6,8 +6,9 @@
     <groupId>com.phoenix</groupId>
     <artifactId>poplar-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>poplar-parent</name>
     <packaging>pom</packaging>
+
+    <name>poplar-parent</name>
     <description>父工程</description>
 
     <modules>
@@ -24,7 +25,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <springboot.version>2.1.6.RELEASE</springboot.version>
-        <spring-context.version>>5.2.0.RELEASE</spring-context.version>
+<!--        <spring-context.version>>5.2.0.RELEASE</spring-context.version>-->
         <lombok.version>1.18.8</lombok.version>
         <fastjson.version>1.2.47</fastjson.version>
         <log4j.version>1.2.17</log4j.version>
@@ -34,7 +35,7 @@
         <druid-spring.version>1.1.10</druid-spring.version>
         <mysql-connector.version>5.1.46</mysql-connector.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+        <maven-plugin.version>3.1.0</maven-plugin.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -145,12 +146,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
-                <version>${maven-clean-plugin.version}</version>
+                <version>${maven-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>${maven-clean-plugin.version}</version>
+                <version>${maven-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
