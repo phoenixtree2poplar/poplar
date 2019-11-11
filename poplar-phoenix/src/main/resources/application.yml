@@ -20,10 +20,12 @@ spring:
   thymeleaf:
     mode: HTML
     encoding: utf-8
+    # 禁用缓存
+#    cache: false
 
 # MyBatis
 mybatis:
   # 搜索指定包别名
-  type-aliases-package: com.phoenix.dao.entity
+  type-aliases-package: com.phoenix..dao.entity
   #  # 配置mapper的扫描，找到所有的mapper.xml映射文件
   mapper-locations:  classpath:mapper/*Mapper.xml
