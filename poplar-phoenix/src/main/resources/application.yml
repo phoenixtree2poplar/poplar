@@ -12,31 +12,18 @@ server:
       # Tomcat启动初始化的线程数，默认值25
       min-spare-threads: 30
 
+# Spring配置
 spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.cj.jdbc.Driver
-    druid:
-      # 主库数据源
-      master:
-        url: jdbc:mysql://localhost:3306/poplar
-        username: root
-        password:
+  profiles:
+    active: dev
   # 模板引擎
   thymeleaf:
     mode: HTML
     encoding: utf-8
-# Spring配置
-#spring:
-#  profiles:
-#    active: dev
-
-#    # 禁用缓存
-#    cache: false
 
 # MyBatis
 mybatis:
   # 搜索指定包别名
-  type-aliases-package: com.phoenix..dao.entity
+  type-aliases-package: com.phoenix.dao.entity
   #  # 配置mapper的扫描，找到所有的mapper.xml映射文件
   mapper-locations:  classpath:mapper/*Mapper.xml

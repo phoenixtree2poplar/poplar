@@ -15,27 +15,14 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-
     @RequestMapping("/addUser")
     public PoplarResult addUser(String user) {
         User insertUser = JSONObject.parseObject(user, User.class);
         int result = userService.insert(insertUser);
-        PoplarResult poplarResult = new PoplarResult();
         if (result > 0) {
-//            return new JSONObject(poplarResult.ok(200,"success"));
-            return null;
+            return PoplarResult.ok(200,"success","插入用户成功");
         } else {
             return null;
         }
     }
-
-
-//    JSONObject poplar() {
-//        Poplar poplar = new Poplar();
-//        poplar.setId(00);
-//        poplar.setName("少年张三丰");
-//        poplar.setAge(25);
-//
-//        return new JSONObject(poplarResult.ok("200","success",poplar));
-//    }
 }

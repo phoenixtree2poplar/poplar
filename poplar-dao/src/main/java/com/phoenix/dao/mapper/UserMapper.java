@@ -1,9 +1,7 @@
 package com.phoenix.dao.mapper;
 
 import com.phoenix.dao.entity.User;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface UserMapper {
     int deleteByPrimaryKey(String userId);
 
