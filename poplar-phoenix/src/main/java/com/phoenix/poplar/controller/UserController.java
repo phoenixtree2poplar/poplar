@@ -1,8 +1,9 @@
 package com.phoenix.poplar.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.phoenix.common.utils.PoplarResult;
+import com.phoenix.dao.entity.User;
 import com.phoenix.poplar.service.UserService;
-import com.phoenix.poplar.utils.PoplarResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +16,7 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/addUser")
-    public PoplarResult addUser(String user) {
+    public PoplarResult insert(String user) {
         User insertUser = JSONObject.parseObject(user, User.class);
         int result = userService.insert(insertUser);
         if (result > 0) {

@@ -1,17 +1,13 @@
 package com.phoenix.poplar.controller;
 
-import com.phoenix.poplar.utils.PoplarResult;
+import com.phoenix.common.utils.PoplarResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Demo {
+public class PoplarTest {
     @RequestMapping("/")
-    PoplarResult poplar() {
-        Poplar poplar = new Poplar();
-        poplar.setId(00);
-        poplar.setName("少年张三丰");
-        poplar.setAge(25);
+    PoplarResult poplarTest() {
         return PoplarResult.ok(200,"success");
     }
 }
