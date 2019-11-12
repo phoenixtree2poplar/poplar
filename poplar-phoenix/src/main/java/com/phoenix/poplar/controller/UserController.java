@@ -1,7 +1,6 @@
 package com.phoenix.poplar.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.phoenix.dao.entity.User;
 import com.phoenix.poplar.service.UserService;
 import com.phoenix.poplar.utils.PoplarResult;
 import org.springframework.beans.factory.annotation.Autowired;

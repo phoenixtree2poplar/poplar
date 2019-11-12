@@ -1,6 +1,5 @@
 package com.phoenix.poplar.controller;
 
-import com.phoenix.dao.entity.Poplar;
 import com.phoenix.poplar.utils.PoplarResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
