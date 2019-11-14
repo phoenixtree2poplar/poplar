@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class PoplarTest {
     @RequestMapping("/")
     PoplarResult poplarTest() {
-        return PoplarResult.ok(200,"success");
+        return PoplarResult.ok(500,"错误","必要的测试");
     }
 }
