@@ -8,6 +8,10 @@ import java.util.HashMap;
  */
 public class PoplarResult extends HashMap<String, Object> {
 
+    private int code;
+    private String msg;
+    private T data;
+
     /**
      * @Description 返回成功结果
      */

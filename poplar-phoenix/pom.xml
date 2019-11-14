@@ -2,26 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>poplar-phoenix</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>poplar-phoenix</name>
-    <description>poplar-phoenix</description>
-
     <parent>
         <groupId>com.phoenix</groupId>
         <artifactId>poplar-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <artifactId>poplar-phoenix</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>poplar-phoenix</name>
+    <description>poplar-phoenix</description>
+
     <dependencies>
         <dependency>
             <groupId>com.phoenix</groupId>
             <artifactId>poplar-dao</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.phoenix</groupId>
             <artifactId>poplar-common</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
@@ -47,7 +48,6 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-
         </dependency>
         <!-- 数据库连接池 -->
         <dependency>
@@ -67,25 +67,4 @@
             <artifactId>fastjson</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-clean-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>
