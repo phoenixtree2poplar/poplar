@@ -13,19 +13,17 @@ public class PoplarResult<T> {
     /**
      * @Description 返回成功结果
      */
-    public static <T> PoplarResult ok(int code, String msg, T data) {
-        PoplarResult result = new PoplarResult();
+    private PoplarResult(int code, String msg, T data) {
         this.code = code;
         this.msg = msg;
         this.data = data;
-        return result;
     }
 
     /**
      * @return PoplarResult
      */
     public static PoplarResult ok() {
-        return PoplarResult.ok(200, null, null);
+        return new PoplarResult<>(200, null, null);
     }
 
     /**
@@ -33,33 +31,39 @@ public class PoplarResult<T> {
      * @return PoplarResult
      */
     public static PoplarResult ok(String msg) {
-        return PoplarResult.ok(200, msg, null);
+        return new PoplarResult<>(200, msg, null);
+    }
+
+    /**
+     * @return PoplarResult
+     */
+    public static PoplarResult ok(int code, String msg) {
+        return new PoplarResult<>(code, msg, null);
     }
 
     /**
      * @param code 状态码
      * @param msg  状态信息
+     * @param data 返回数据
      * @return PoplarResult
      */
-    public static PoplarResult ok(int code, String msg) {
-        return PoplarResult.ok(code, msg, null);
+    public static <T> PoplarResult ok(int code, String msg, T data) {
+        return new PoplarResult<>(code, msg, data);
     }
 
     /**
      * @Description 返回错误
      */
-    public static PoplarResult error(int code, String msg) {
-        PoplarResult result = new PoplarResult();
+    private PoplarResult(int code, String msg) {
         this.code = code;
         this.msg = msg;
-        return result;
     }
 
     /**
      * @return PoplarResult
      */
     public static PoplarResult error() {
-        return error(500, "未知错误，请稍后重试!");
+        return new PoplarResult<>(500, "未知错误，请稍后重试");
     }
 
     /**
@@ -67,7 +71,16 @@ public class PoplarResult<T> {
      * @return PoplarResult
      */
     public static PoplarResult error(String msg) {
-        return error(500, msg);
+        return new PoplarResult<>(500, msg);
+    }
+
+    /**
+     * @param code 状态码
+     * @param msg  状态信息
+     * @return PoplarResult
+     */
+    public static PoplarResult error(int code, String msg) {
+        return new PoplarResult<>(code, msg);
     }
 
     public int getCode() {
