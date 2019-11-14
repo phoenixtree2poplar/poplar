@@ -1,12 +1,10 @@
 package com.phoenix.common.utils;
 
-import java.util.HashMap;
-
 /**
  * @author wutong  2019/8/12  wu_ton-g@foxmail.com
  * @Description 统一返回结果
  */
-public class PoplarResult extends HashMap<String, Object> {
+public class PoplarResult<T> {
 
     private int code;
     private String msg;
@@ -15,11 +13,11 @@ public class PoplarResult extends HashMap<String, Object> {
     /**
      * @Description 返回成功结果
      */
-    public static PoplarResult ok(int code, String msg, Object data) {
+    public static <T> PoplarResult ok(int code, String msg, T data) {
         PoplarResult result = new PoplarResult();
-        result.put("code", code);
-        result.put("msg", msg);
-        result.put("data", data);
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
         return result;
     }
 
@@ -52,8 +50,8 @@ public class PoplarResult extends HashMap<String, Object> {
      */
     public static PoplarResult error(int code, String msg) {
         PoplarResult result = new PoplarResult();
-        result.put("code", code);
-        result.put("msg", msg);
+        this.code = code;
+        this.msg = msg;
         return result;
     }
 
@@ -70,5 +68,29 @@ public class PoplarResult extends HashMap<String, Object> {
      */
     public static PoplarResult error(String msg) {
         return error(500, msg);
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
     }
 }
