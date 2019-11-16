@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : localhost
 Source Server Version : 50727
 Source Host           : localhost:3306
-Source Database       : ruoyi
+Source Database       : phoenix
 
 Target Server Type    : MYSQL
 Target Server Version : 50727
 File Encoding         : 65001
 
-Date: 2019-11-16 10:06:51
+Date: 2019-11-16 10:43:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -225,7 +225,7 @@ CREATE TABLE `qrtz_scheduler_state` (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'DESKTOP-DT2PDS61573869922043', '1573869924460', '15000');
+INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'DESKTOP-DT2PDS61573870821410', '1573870823799', '15000');
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -302,9 +302,9 @@ CREATE TABLE `qrtz_triggers` (
 -- ----------------------------
 -- Records of qrtz_triggers
 -- ----------------------------
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME1', 'DEFAULT', 'TASK_CLASS_NAME1', 'DEFAULT', null, '1573869930000', '-1', '5', 'PAUSED', 'CRON', '1573869922000', '0', null, '2', '');
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME2', 'DEFAULT', 'TASK_CLASS_NAME2', 'DEFAULT', null, '1573869930000', '-1', '5', 'PAUSED', 'CRON', '1573869922000', '0', null, '2', '');
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME3', 'DEFAULT', 'TASK_CLASS_NAME3', 'DEFAULT', null, '1573869940000', '-1', '5', 'PAUSED', 'CRON', '1573869922000', '0', null, '2', '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME1', 'DEFAULT', 'TASK_CLASS_NAME1', 'DEFAULT', null, '1573870830000', '-1', '5', 'PAUSED', 'CRON', '1573870821000', '0', null, '2', '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME2', 'DEFAULT', 'TASK_CLASS_NAME2', 'DEFAULT', null, '1573870830000', '-1', '5', 'PAUSED', 'CRON', '1573870821000', '0', null, '2', '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME3', 'DEFAULT', 'TASK_CLASS_NAME3', 'DEFAULT', null, '1573870840000', '-1', '5', 'PAUSED', 'CRON', '1573870821000', '0', null, '2', '');
 
 -- ----------------------------
 -- Table structure for sys_config
@@ -908,7 +908,7 @@ CREATE TABLE `sys_user_online` (
 -- ----------------------------
 -- Records of sys_user_online
 -- ----------------------------
-INSERT INTO `sys_user_online` VALUES ('41830a06-ccb8-4a88-a26e-957568b20db6', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-16 10:05:29', '2019-11-16 10:05:29', '1800000');
+INSERT INTO `sys_user_online` VALUES ('41830a06-ccb8-4a88-a26e-957568b20db6', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome', 'Windows 10', 'on_line', '2019-11-16 10:05:29', '2019-11-16 10:20:29', '1800000');
 
 -- ----------------------------
 -- Table structure for sys_user_post
