@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("addUser")
     public PoplarResult insert(@RequestBody String user) {
-        User insertUser = JSONObject.parseObject(user, User.class);
+        User  insertUser = JSONObject.parseObject(user,User.class);
         int result = userService.insert(insertUser);
         if (result > 0) {
             return PoplarResult.ok(200, "success", "插入用户成功");
