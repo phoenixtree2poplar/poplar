@@ -12,6 +12,8 @@ File Encoding         : 65001
 
 Date: 2019-11-16 10:43:26
 */
+CREATE DATABASE `phoenix` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+use phoenix;
 
 SET FOREIGN_KEY_CHECKS=0;
 

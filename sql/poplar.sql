@@ -13,6 +13,9 @@ File Encoding         : 65001
 Date: 2019-11-16 10:43:53
 */
 
+CREATE DATABASE `poplar` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+use poplar;
+SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
