@@ -19,10 +19,10 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("addUser")
-    public PoplarResult insert(@RequestBody String user) {
-        User  insertUser = JSONObject.parseObject(user,User.class);
+    public PoplarResult insert(@RequestBody String str) {
+        User  user = JSONObject.parseObject(str,User.class);
         try {
-            userService.insert(insertUser);
+            userService.insert(user);
             log.info("---------------------添加用户成功---------------------");
             return PoplarResult.ok(200, "success", "添加用户成功");
         } catch (Exception e) {
