@@ -19,7 +19,7 @@
                                 allowMultiQueries=true&amp;
                                 useSSL=false"
                         userId="root"
-                        password="root">
+                        password="">
             <!-- 以上数据库账号密码 需修改 -->
         </jdbcConnection>
         <!-- 非必需，类型处理器，在数据库类型和java类型之间的转换控制-->
