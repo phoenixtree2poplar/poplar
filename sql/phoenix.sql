@@ -14,7 +14,7 @@ Date: 2019-11-16 10:43:26
 */
 CREATE DATABASE `phoenix` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 use phoenix;
-
+SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------

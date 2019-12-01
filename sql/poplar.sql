@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50727
 File Encoding         : 65001
 
-Date: 2019-11-16 10:43:53
+Date: 2019-12-01 09:43:37
 */
 
 CREATE DATABASE `poplar` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
@@ -28,10 +28,10 @@ CREATE TABLE `t_user` (
   `user_name` varchar(200) NOT NULL COMMENT '用户名',
   `user_age` varchar(200) DEFAULT NULL COMMENT '用户年龄',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('123', 'zouni', 'hao', '26');
-INSERT INTO `t_user` VALUES ('124', 'zouni', 'hao', '26');
+INSERT INTO `t_user` VALUES ('1', 'phoenixtree', 'wutong', '21');
+INSERT INTO `t_user` VALUES ('2', 'poplar', 'di', '21');
