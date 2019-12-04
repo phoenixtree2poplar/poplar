@@ -2,10 +2,9 @@ package com.phoenix.dao.mapper;
 
 import com.phoenix.dao.entity.User;
 import com.phoenix.dao.entity.UserExample;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
-import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
     long countByExample(UserExample example);
