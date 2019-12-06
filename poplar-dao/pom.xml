@@ -42,6 +42,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
             <!-- 自动初始化数据插件======================================================================================= -->
             <plugin>
                 <groupId>org.flywaydb</groupId>
