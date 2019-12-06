@@ -23,7 +23,7 @@
     </dependencies>
     <build>
         <plugins>
-            <!-- mybatis逆向工程 -->
+            <!-- mybatis逆向工程=============================================================== -->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
@@ -41,6 +41,25 @@
                         <!-- 版本过高无法生成 delete updata 方法 -->
                     </dependency>
                 </dependencies>
+            </plugin>
+            <!-- 自动初始化数据插件======================================================================================= -->
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.0.2</version>
+           <!-- <version>5.2.1</version> -->
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.47</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <url>jdbc:mysql://localhost:3306/poplar?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false</url>
+                    <driver>com.mysql.jdbc.Driver</driver>
+                    <user>root</user>
+                </configuration>
             </plugin>
         </plugins>
     </build>
