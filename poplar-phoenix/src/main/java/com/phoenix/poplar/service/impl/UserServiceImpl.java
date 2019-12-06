@@ -30,6 +30,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> queryUserAll() {
-        return userMapper.queryUserAll();
+//        return userMapper.queryUserAll();
+        return null;
     }
+
 }
