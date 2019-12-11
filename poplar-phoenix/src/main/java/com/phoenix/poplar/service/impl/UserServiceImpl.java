@@ -14,13 +14,14 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserMapper userMapper;
 
-    public int addUser(User user) {
-        return userMapper.insert(user);
+    @Override
+    public List<User> queryUserAll() {
+        return userMapper.queryUserAll();
     }
 
     @Override
-    public int deleteUser(int userId) {
-        return userMapper.deleteByPrimaryKey(userId);
+    public int addUser(User user) {
+        return userMapper.insert(user);
     }
 
     @Override
@@ -29,7 +30,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> queryUserAll() {
-        return userMapper.queryUserAll();
+    public int deleteUser(int userId) {
+        return userMapper.deleteByPrimaryKey(userId);
     }
 }
