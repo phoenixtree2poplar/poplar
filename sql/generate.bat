@@ -1,0 +1,1 @@
+for /l %%i in (1,1,40) do (echo INSERT INTO `t_user` VALUES (%%i, 'poplar%%i', 'di%%i', '%%i'^)^; >> sql-test-user.sh)
