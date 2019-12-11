@@ -1,5 +1,6 @@
 package com.phoenix.common.utils;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -9,8 +10,11 @@ import lombok.Data;
 @Data
 public class PoplarResult<T> {
 
+    @ApiModelProperty("状态码")
     private int code;
+    @ApiModelProperty("状态信息")
     private String msg;
+    @ApiModelProperty("返回数据")
     private T data;
 
     /**

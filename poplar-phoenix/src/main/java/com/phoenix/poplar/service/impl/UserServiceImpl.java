@@ -19,8 +19,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int deleteUser(User user) {
-        return userMapper.deleteByPrimaryKey(user.getId());
+    public int deleteUser(int userId) {
+        return userMapper.deleteByPrimaryKey(userId);
     }
 
     @Override
@@ -30,8 +30,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> queryUserAll() {
-//        return userMapper.queryUserAll();
-        return null;
+        return userMapper.queryUserAll();
     }
-
 }
