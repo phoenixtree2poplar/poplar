@@ -12,7 +12,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/rest/v1")
+@RequestMapping(value = "/rest/v1", produces = "application/json;charset=utf-8")
 public class UserController {
 
     @Autowired
