@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Objects;
 
 @Slf4j
 @RestController
@@ -23,13 +22,8 @@ public class UserController {
     @GetMapping("/user")
     public PoplarResult queryUserAll() {
         List<User> userList = userService.queryUserAll();
-        if (Objects.nonNull(userList)) {
-            log.info("---------------------查询用户成功---------------------");
-            return PoplarResult.ok(200, "success", userList);
-        } else {
-            log.info("---------------------查询用户失败---------------------");
-            return PoplarResult.error("查询用户失败");
-        }
+        log.info("---------------------查询用户成功---------------------");
+        return PoplarResult.ok(200, "success", userList);
     }
 
     @ApiOperation("添加用户")

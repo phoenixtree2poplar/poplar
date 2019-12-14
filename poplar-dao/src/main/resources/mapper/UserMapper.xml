@@ -25,9 +25,9 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.phoenix.dao.entity.User">
-    insert into t_user (id, user_id, user_name, 
+    insert into t_user (user_id, user_name,
       user_age)
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
+    values (#{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR},
       #{userAge,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.phoenix.dao.entity.User">

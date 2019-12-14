@@ -5,6 +5,7 @@ import com.phoenix.dao.entity.User;
 import java.util.List;
 
 public interface UserMapper {
+
     List<User> queryUserAll();
 
     int insert(User record);

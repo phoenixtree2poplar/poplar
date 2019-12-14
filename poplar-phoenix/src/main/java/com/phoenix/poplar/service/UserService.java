@@ -8,11 +8,11 @@ import java.util.List;
 @Service
 public interface UserService {
 
-    int addUser(User user);
+    List<User> queryUserAll();
 
-    int deleteUser(int userId);
+    int addUser(User user);
 
     int updateUser(User user);
 
-    List<User> queryUserAll();
+    int deleteUser(int userId);
 }

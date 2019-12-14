@@ -14,7 +14,6 @@ public class GlobalExceptionHandler {
     // 拦截异常的类型
     @ExceptionHandler(value = Exception.class)
     public PoplarResult exceptionHandler(Exception e) {
-
         log.info("------未知错误-start-----");
         e.printStackTrace();
         log.info("------未知错误-end-----");
