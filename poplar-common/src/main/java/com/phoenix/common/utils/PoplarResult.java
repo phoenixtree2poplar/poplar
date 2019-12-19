@@ -1,5 +1,6 @@
 package com.phoenix.common.utils;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -8,6 +9,7 @@ import lombok.Data;
  * @Description 统一返回结果
  */
 @Data
+@ApiModel(description = "统一返回结果")
 public class PoplarResult<T> {
 
     @ApiModelProperty("状态码")

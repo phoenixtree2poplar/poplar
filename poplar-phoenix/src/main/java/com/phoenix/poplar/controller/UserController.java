@@ -1,6 +1,7 @@
 package com.phoenix.poplar.controller;
 
 import com.github.pagehelper.PageInfo;
+import com.phoenix.common.constant.Constants;
 import com.phoenix.common.utils.PoplarResult;
 import com.phoenix.dao.entity.User;
 import com.phoenix.poplar.service.UserService;
@@ -21,8 +22,8 @@ public class UserController {
 
     @ApiOperation("查询用户")
     @GetMapping("/user")
-    public PoplarResult queryUserAll(@RequestParam(required = false) Integer pageNum,
-                                     @RequestParam(required = false) Integer pageSize) {
+    public PoplarResult queryUserAll(@RequestParam(required = false, defaultValue = Constants.PAGE_NUM) Integer pageNum,
+                                     @RequestParam(required = false, defaultValue = Constants.PAGE_SIZE) Integer pageSize) {
         List<User> users = userService.queryUserAll(pageNum, pageSize);
         PageInfo<User> userPageInfo = new PageInfo<>(users);
         log.info("---------------------查询用户成功---------------------");
