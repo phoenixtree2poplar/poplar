@@ -1,5 +1,6 @@
 package com.phoenix.poplar.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.phoenix.dao.entity.User;
 import com.phoenix.dao.mapper.UserMapper;
 import com.phoenix.poplar.service.UserService;
@@ -15,7 +16,8 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public List<User> queryUserAll() {
+    public List<User> queryUserAll(Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         return userMapper.queryUserAll();
     }
 

@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public interface UserService {
 
-    List<User> queryUserAll();
+    List<User> queryUserAll(Integer pageNum, Integer pageSize);
 
     int addUser(User user);
 
