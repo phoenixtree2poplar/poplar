@@ -20,40 +20,13 @@
         <module>poplar-common</module>
         <module>poplar-phoenix</module>
     </modules>
+
     <properties>
         <fastjson.version>1.2.47</fastjson.version>
         <druid-spring.version>1.1.10</druid-spring.version>
         <swagger2.version>2.9.2</swagger2.version>
+        <pagehelper.version>1.2.12</pagehelper.version>
     </properties>
-
-    <!-- 依赖声明 -->
-    <dependencyManagement>
-        <dependencies>
-            <!-- json -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
-            </dependency>
-            <!-- 数据库连接池 -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid-spring.version}</version>
-            </dependency>
-            <!-- swagger -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger2.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger2.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <repositories>
         <repository>

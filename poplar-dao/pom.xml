@@ -30,7 +30,7 @@
 
     <build>
         <plugins>
-            <!-- mybatis逆向工程=============================================================== -->
+            <!-- mybatis逆向工程 -->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
@@ -49,7 +49,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <!-- 自动初始化数据插件======================================================================================= -->
+            <!-- flyway自动初始化数据插件 -->
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
@@ -67,6 +67,7 @@
                     </url>
                     <driver>com.mysql.jdbc.Driver</driver>
                     <user>root</user>
+                    <password>root</password>
                 </configuration>
             </plugin>
         </plugins>
