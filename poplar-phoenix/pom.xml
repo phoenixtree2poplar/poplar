@@ -14,6 +14,12 @@
     <description>poplar-phoenix</description>
 
     <dependencies>
+        <!-- dao -->
+        <dependency>
+            <groupId>com.phoenix</groupId>
+            <artifactId>poplar-dao</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.phoenix</groupId>
             <artifactId>poplar-common</artifactId>

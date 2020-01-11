@@ -14,12 +14,6 @@
     <description>common通用工具</description>
 
     <dependencies>
-        <!-- dao -->
-        <dependency>
-            <groupId>com.phoenix</groupId>
-            <artifactId>poplar-dao</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <!-- springboot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -44,17 +38,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <!-- db驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <!-- db连接池 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>${druid-spring.version}</version>
-        </dependency>
         <!-- json -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -72,11 +55,6 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger2.version}</version>
         </dependency>
-        <!-- 分页 -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>${pagehelper.version}</version>
-        </dependency>
+
     </dependencies>
 </project>
