@@ -1,0 +1,9 @@
+server:
+  port: 2500
+
+eureka:
+  instance:
+    hostname: zuul
+  client:
+    service-url:
+      defautZone:  http://localhost:2000/eureka/

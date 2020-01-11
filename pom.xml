@@ -19,6 +19,7 @@
         <module>poplar-dao</module>
         <module>poplar-common</module>
         <module>poplar-eureka</module>
+        <module>poplar-zuul</module>
         <module>poplar-phoenix</module>
     </modules>
 

@@ -8,16 +8,27 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>poplar-free</artifactId>
+    <artifactId>poplar-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <!-- common -->
+<!--        <dependency>-->
+<!--            <groupId>com.phoenix</groupId>-->
+<!--            <artifactId>poplar-common</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--        </dependency>-->
+        <!-- eureka-client -->
         <dependency>
-            <groupId>com.phoenix</groupId>
-            <artifactId>poplar-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <!-- springboot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <!-- dao -->
         <!-- <dependency> -->
         <!--     <groupId>com.phoenix</groupId> -->

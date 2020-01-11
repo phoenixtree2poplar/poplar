@@ -1,12 +1,14 @@
-package com.phoenix.free;
+package com.phoenix.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-//@MapperScan(value = "com.phoenix.dao.mapper")
+
+@EnableEurekaClient
 @SpringBootApplication
-public class Free {
+public class PoplarZuul {
     public static void main(String[] args) {
-        SpringApplication.run(Free.class, args);
+        SpringApplication.run(PoplarZuul.class, args);
     }
 }
