@@ -14,22 +14,23 @@
     <description>poplar-phoenix</description>
 
     <dependencies>
+        <!-- common -->
+        <dependency>
+            <groupId>com.phoenix</groupId>
+            <artifactId>poplar-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- dao -->
         <dependency>
             <groupId>com.phoenix</groupId>
             <artifactId>poplar-dao</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.phoenix</groupId>
-            <artifactId>poplar-common</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <!-- 热部署 -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-devtools</artifactId>-->
-<!--            <scope>runtime</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 </project>
