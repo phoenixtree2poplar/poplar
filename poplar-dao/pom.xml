@@ -70,7 +70,7 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>6.1.0</version>
+                <version>5.2.1</version>
                 <dependencies>
                     <dependency>
                         <groupId>mysql</groupId>
