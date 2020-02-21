@@ -38,7 +38,7 @@ public class CodeGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("com.phoenix.free");
+        pc.setParent("com.phoenix.free");  // 此处需要根据工程包名进行修改
         mpg.setPackageInfo(pc);
 
         // 策略配置
