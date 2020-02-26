@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan(value = "com.phoenix.dao.mapper")
 @SpringBootApplication
-public class PoplarPhoenixApplication {
+public class Poplar {
     public static void main(String[] args) {
-        SpringApplication.run(PoplarPhoenixApplication.class, args);
+        SpringApplication.run(Poplar.class, args);
     }
 }
