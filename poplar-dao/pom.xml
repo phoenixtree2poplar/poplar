@@ -61,7 +61,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.47</version>
+                        <version>8.0.16</version>
                         <!-- 版本过高无法生成 delete updata 方法 -->
                     </dependency>
                 </dependencies>
@@ -75,7 +75,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.47</version>
+                        <version>8.0.16</version>
                     </dependency>
                 </dependencies>
                 <configuration>
